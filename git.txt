@@ -37,3 +37,30 @@ git config --list
 git commit -m 'soolking'
 #Pull the changes from the forked remote repository, check the available remotes and push the changes from you local master 
 #(or main) branch to the remote repository forked to your account.
+#I added this file to mu github account
+#Q8: create a new branche:
+git branch Bochra
+#working on Bochra's Branch
+git checkout Bochra
+#Q9While on the new_branch, open my soolinkg.txt file and write the song lyrics where in the file where indicated.
+#for that I used 
+code Soolking.txt
+#and I added the lyrics
+#Q10: Stage and commit the new changes.
+git add Soolking.txt
+git commit -m 'Soolking'
+#Q11:Now return to the master (or main) branch, and merge the branch new_branch to master.
+git checkout main
+# and then we shoud:
+git merge --no-edit Bochra
+# we can see the modification using:
+cat Soolking.txt
+#Q12: Open the Soolking.txt file and write the title of your favorite song from your favorite band.
+code Soolking.txt
+#now I change the name we can see the modification:
+cat Soolking.txt
+#Q13:Stage and commit the new changes.
+git add Soolking.txt
+git commit -m 'Soolking'
+#Q14:Pull the changes from the forked remote repository to master, 
+#check the available remotes, and push the changes from you local master (or main) branch to the remote repository forked to your account.
